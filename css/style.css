@@ -27,11 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 3em;
   text-align: center;
-  color: #ff6347;
+  color: blue;
 }
 
 .menu {
-  background-color: #ff6347;
+  background-color: blue;
 }
 
 .menu__list {
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__link:hover, .menu__link:focus {
   background-color: white;
-  color: #ff6347;
+  color: blue;
 }
 
 .main {
