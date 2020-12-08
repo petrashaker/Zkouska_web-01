@@ -1,0 +1,16 @@
+---
+layout: layouts/sablona
+title: Náš tým
+menu: tym
+---
+
+<h2>Náš tým</h2>
+
+<p>Tohle je náš tým.</p>
+
+{% for osoba in zamestnanci %}
+
+    <h4>{{ osoba.jmeno }} {{ osoba.prijmeni }} ({{ osoba.vek }})</h4>
+    <p>{{ osoba. pozice }} </p>
+
+{% endfor %}

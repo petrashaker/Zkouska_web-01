@@ -1,0 +1,20 @@
+[
+ {
+     "jmeno": "Petra",
+     "prijmeni": "Shaker",
+     "vek": 33,
+     "pozice": "ředitelka zeměkoule"
+ },
+ {
+    "jmeno": "Luděk",
+    "prijmeni": "Roleček",
+    "vek": 21,
+    "pozice": "profi IT"
+ },
+ {
+    "jmeno": "Tomáš",
+    "prijmeni": "Couch",
+    "vek": 29,
+    "pozice": "super kouč"
+ }
+]

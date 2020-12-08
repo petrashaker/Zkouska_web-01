@@ -1,0 +1,21 @@
+---
+layout: layouts/sablona
+title: Blog
+menu: blog
+---
+
+<h2>Blog</h2>
+
+{% for clanky in collections.clanky | reverse %}
+
+<h3>
+    <a href="{{ clanky.url }}">
+    {{ clanky.data.title }}
+</a>
+</h3>
+
+<p>
+    {{ clanky.templateContent | safe | truncate(200) }}
+</p>
+
+{% endfor %}

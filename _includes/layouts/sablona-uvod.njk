@@ -1,0 +1,37 @@
+{% include 'partials/page-top.njk' %}
+
+
+<div class="kontejner">
+
+	<main class="main">
+
+		{{ content | safe }}
+
+	</main>
+
+	<aside class="sidebar">
+        <h3>Nejnovější blog</h3>
+        
+        {% for clanky in collections.clanky | reverse %}
+            {% if loop.index <=1 %}
+        
+            <h4>
+                {{ clanky.data.title }}
+            </h4>
+
+            {% endif %}
+
+        {% endfor %}
+        
+        <hr>
+
+        <h3>Boční pruh</h3>
+
+		<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis quam a ab, architecto qui ut earum dolore neque facilis quisquam, doloremque laudantium facere blanditiis nemo ex accusantium pariatur sunt tempore!</p>
+
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam enim suscipit ab doloribus ex dolorum nobis vero laboriosam, sequi repellat doloremque earum, vel ipsum officiis recusandae maxime error? Magnam, neque.</p>
+	</aside>
+
+</div>
+
+{% include 'partials/page-bottom.njk' %}

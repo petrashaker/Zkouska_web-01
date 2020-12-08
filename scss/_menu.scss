@@ -1,0 +1,35 @@
+// MENU
+
+.menu {
+	background-color: $primary;
+
+	&__list {
+		margin: 0;
+		padding: 2px;
+		display: flex;
+		justify-content: center;
+		list-style: none;
+	}
+
+	&__item:not(:last-child) {
+		border-right: 1px solid white;
+	}
+
+	&__item--active {
+		border: 5px solid black;
+	}
+
+	&__link {
+		display: block;
+		padding: ($pad / 2) ($pad) ;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+
+		&:hover,
+		&:focus {
+			background-color: white;
+			color: $primary;
+		}
+	}
+}

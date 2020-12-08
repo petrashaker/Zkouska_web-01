@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eleventy - první web</title>
+
+	<!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+	<!-- Náš vlastní styl -->
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+
+	<header class="header">
+		<h1 class="header__logo">Eleventy - první web</h1>
+	</header>
+
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__item {% if menu === 'uvod'  %} menu__item--active {% endif %}"><a href="/" class="menu__link">Úvod</a></li>
+			<li class="menu__item {% if menu === 'produkty'  %} menu__item--active {% endif %} "><a href="/produkty/" class="menu__link">Produkty</a></li>
+			<li class="menu__item {% if menu === 'onas'  %} menu__item--active {% endif %}" ><a href="/onas/" class="menu__link">O nás</a></li>
+			<li class="menu__item {% if menu === 'kontakt' %} menu__item--active {% endif %} "><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+			<li class="menu__item {% if menu === 'kontakt' %} menu__item--active {% endif %} "><a href="/blog/" class="menu__link">Blog</a></li>
+			<li class="menu__item {% if menu === 'tym'  %} menu__item--active {% endif %} "><a href="/tym/" class="menu__link">Náš tým</a></li>
+		</ul>
+	</nav>

@@ -1,0 +1,37 @@
+---
+layout: layouts/sablona
+title: Produkty
+menu: produkty
+produkty: [
+    {
+        nazev: "vysavac 101",
+        popis: "Toto je super vysavac.",
+        cena: 8769
+    },
+    {
+        nazev: "lednice 202",
+        popis: "Toto je bezvadná lednice. Mrazí jako ďas.",
+        cena: 7659
+    },
+    {
+        nazev: "pracka 303",
+        popis: "Kdo ji koupí, neprohloupí.",
+        cena: 9876
+    }
+]
+---
+<h2>Naše produkty</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quibusdam temporibus, at sunt reprehenderit iusto labore cum earum dolorum. Nostrum, ducimus cupiditate facilis minima dicta rerum velit quis eos nemo?</p>
+
+<ul>
+{% for produkt in produkty %}
+
+    <li> 
+        <h4>{{ produkt.nazev }}</h4>
+        <p>{{ produkt.popis }}</p>
+        <p><strong>{{ produkt.cena }} Kč </strong></p>
+
+    </li>
+{% endfor %}
+</ul>

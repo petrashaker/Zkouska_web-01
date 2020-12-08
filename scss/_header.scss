@@ -1,0 +1,14 @@
+// HEADER
+
+.header {
+	background-color: $bg-color;
+	padding: $pad;
+
+	&__logo {
+		margin: 0;
+		font-size: 3em;
+		text-align: center;
+		color: $primary;
+	}
+}
+
